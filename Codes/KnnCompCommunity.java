@@ -213,7 +213,7 @@ public class KnnCompCommunity {
 
         myEigenValues = evd.getRealEigenvalues();
         myEigenVectorMatrix = evd.getV();
- 
+
         List<EigenObject> eigenObjList = new ArrayList<>(dataSize);
         for (int i = 0; i < dataSize; i++) {
             eigenObjList.add(new EigenObject(myEigenValues[i], myEigenVectorMatrix.getArray()[i]));
