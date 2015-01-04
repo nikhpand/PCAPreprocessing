@@ -199,7 +199,7 @@ public class KnnCompCommunity {
         for (double dataAdjustComps[] : fullDataAdjust) {
             metricAdjustProdTotal += dataAdjustComps[i] * dataAdjustComps[j];
         }
-        return metricAdjustProdTotal / (fullDataAdjust.size() - 1);  // remove -1 when finally done
+        return metricAdjustProdTotal / (fullDataAdjust.size() - 1);
     }
 
     private static List performEigenOperations(double[][] covarianceMatrix, int dataSize) {
